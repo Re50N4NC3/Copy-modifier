@@ -24,11 +24,7 @@ def clean(txt):
 # reverses copied text || txet deipoc sesrever
 def reverse_paste():
     clipboard = Tk().clipboard_get()
-    reverse = ''
-
-    # reverse string
-    for i in range(0, len(clipboard)):
-        reverse += clipboard[-1-i]
+    reverse = clipboard[::-1]
 
     clean(reverse)
 
